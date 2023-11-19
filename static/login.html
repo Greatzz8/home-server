@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        background: #121212; /* fallback for old browsers */
+        overflow-x: hidden;
+
+        height: 100%;
+
+        /* code to make all text unselectable */
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    /* Disables selector ring */
+    body:not(.user-is-tabbing) button:focus,
+    body:not(.user-is-tabbing) input:focus,
+    body:not(.user-is-tabbing) select:focus,
+    body:not(.user-is-tabbing) textarea:focus {
+        outline: none;
+    }
+
+    /* ########################################################## */
+
+    h1 {
+        color: white;
+
+        font-size: 35px;
+        font-weight: 800;
+    }
+
+    .flex-container {
+        width: 100vw;
+
+        margin-top: 60px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-container {
+        width: 500px;
+        height: 350px;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 500px;
+        height: 350px;
+
+        margin-top: 5px;
+        padding-top: 20px;
+
+        border-radius: 12px;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        background: #1f1f1f;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.199);
+    }
+
+    .subtitle {
+        font-size: 11px;
+
+        color: rgba(177, 177, 177, 0.3);
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition-delay: 99999s;
+        transition: color 99999s ease-out, background-color 99999s ease-out;
+    }
+
+    /*作者：月泽*/
+    /*链接：https://juejin.cn/post/6955329960068268040*/
+    /*来源：稀土掘金*/
+    /*著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。*/
+    input {
+        border: none;
+        border-bottom: solid rgb(143, 143, 143) 1px;
+        filter: none;
+        margin-bottom: 30px;
+
+        background: none;
+        background-color: transparent;
+        color: rgba(255, 255, 255, 0.555);
+        font-size: large;
+        height: 35px;
+        width: 300px;
+    }
+
+    .submit-btn {
+        cursor: pointer;
+
+        border: none;
+        border-radius: 8px;
+
+        box-shadow: 2px 2px 7px #38d39f70;
+
+        background: #38d39f;
+        color: rgba(255, 255, 255, 0.8);
+
+        width: 80px;
+
+        transition: all 1s;
+    }
+
+    .submit-btn:hover {
+        color: rgb(255, 255, 255);
+
+        box-shadow: none;
+    }
+
+</style>
+</head>
+<body>
+<div class="flex-container">
+    <div class="content-container">
+        <div class="form-container">
+            <form action="http://127.0.0.1:8081/login" method="post">
+                <h1>
+                    Login
+                </h1>
+                <br>
+                <br>
+                <span class="subtitle">USERNAME:</span>
+                <br>
+                <input type="text" name="username" value="">
+                <br>
+                <span class="subtitle">PASSWORD:</span>
+                <br>
+                <input type="password" name="password" value="">
+                <br><br>
+                <input type="submit" value="SUBMIT" class="submit-btn">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<!--Copyright (c) 2023 by Thodoris Thomaidis (https://codepen.io/rikosteo/pen/vwrwMe)-->
+
+<!--Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:-->
+
+<!--The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.-->

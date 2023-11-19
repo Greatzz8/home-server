@@ -1,0 +1,8 @@
+node_modules/
+.idea/
+static/Movies/
+**/.DS_Store
+static/temp/
+static/build/
+.env
+allowed_user.json
